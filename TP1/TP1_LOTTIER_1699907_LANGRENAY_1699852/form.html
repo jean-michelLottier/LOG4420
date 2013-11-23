@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Loup Solitaire: La Forteresse Maudite</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Author" content="Lottier Jean-Michel, Langrenay Pierre" />
+    </head>
+
+    <body>
+        <header id="mainHeader">
+            <section>
+                <div class="header_logo">
+                    <img src="#" alt="logo_du_jeu"/>
+                </div>
+                <div class="header_title">
+                    <h1>Série Loup Solitaire : La Forteresse Maudite</h1>
+                </div>
+            </section>
+        </header>
+
+        <section id="mainContent">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="tutorial.html#disciplines">Disciplines</a>
+                    </li>
+                    <li>
+                        <a href="tutorial.html#equipements">Items</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>Formulaire de participation au JEU</h2>
+            <form action="paragraph1.html">
+                <p>
+                    Complétez le formulaire. Les champs marqués par <em>*</em> sont obligatoires
+                </p>
+                <fieldset>
+                    <legend>
+                        Caractéristiques
+                    </legend>
+                    <label for="pseudo">Quel est votre nom aventurier ?</label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Indiana Jones" size="30" maxlength="10" required autofocus/>
+                    <div class="endurance">
+                        <label>Endurance : </label>
+                        <progress value="17" max="19" class="progress_bar" title="Cette caractéristique se calcule de façon aléatoire">
+
+                        </progress>
+                        <span class="progress_label">17 pts</span>
+                    </div>
+                    <div class="hability">
+                        <label>Habileté : </label>
+                        <progress value="22" max="29" class="progress_bar" id="progress_bar_h" title="Cette caractéristique se calcule de façon aléatoire">
+
+                        </progress>
+                        <span class="progress_label">22 pts</span>
+                    </div>
+                    <div class="gold">
+                        <label>Or : </label>
+                        <progress value="13" max="50" class="progress_bar" id="progress_bar_o" title="Cette caractéristique se calcule de façon aléatoire">
+
+                        </progress>
+                        <span class="progress_label">13 pièces</span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Disciplines
+                    </legend>
+
+                    <label for="discipline">Aventurier! il te faut choisir 3 disciplines</label>
+                    <select name="discipline" id="discipline" required>
+                        <option value="">"Sélectionnez un discipline"</option>
+                        <option value="La science des armes">La science des armes</option>
+                        <option value="Contrôle animal">Contrôle animal</option>
+                        <option value="Science médicale">Science médicale</option>
+                        <option value="Invisibilité">Invisibilité</option>
+                        <option value="Art de la chasse">Art de la chasse</option>
+                        <option value="Exploration">Exploration</option>
+                        <option value="Foudroiement psychique">Foudroiement psychique</option>
+                        <option value="Ecran psychique">Ecran psychique</option>
+                        <option value="Nexus">Nexus</option>
+                        <option value="Intuition">Intuition</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Items
+                    </legend>
+                    <p>
+                        Choisissez 5 objets dans le magasin pour débuter ton aventure
+                    </p>
+                    <div id="items_list_1">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="epee"/>
+                                <label for="epee">épée (arme)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="arc"/>
+                                <label for="arc">arc (arme)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carquois"/>
+                                <label for="carquois">carquois (objet spécial)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="corde"/>
+                                <label for="corde">corde (objet contenu dans le sac à dos)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="potion"/>
+                                <label for="potion">potion de Laumspur (objet contenu dans le sac à dos)</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="items_list_2">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="poignard"/>
+                                <label for="poignard">poignard (arme)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lanterne"/>
+                                <label for="lanterne">lanterne (objet contenu dans le sac à dos)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="masse"/>
+                                <label for="masse">masse d'armes (arme)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="rations"/>
+                                <label for="rations">trois rations spéciales (repas)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="graines"/>
+                                <label for="graines">trois graines de feu (objet spécial)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <div id="startGame">
+                    <input type="submit" value="Validez" />
+                </div>
+            </form>
+
+        </section>
+        <footer>
+            <a href="#">Contact</a>
+            <p>
+                &copy; Copyright  by Lottier Jean-Michel &amp; Langrenay Pierre
+            </p>
+        </footer>
+
+    </body>
+</html>

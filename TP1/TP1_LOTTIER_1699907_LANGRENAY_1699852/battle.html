@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Loup Solitaire : La Forteresse Maudite</title>
+        <meta name="description" content="">
+        <meta name="author" content="Lottier Jean-Michel">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header_logo">
+                <img src="#" alt="logo_du_jeu"/>
+            </div>
+            <div class="header_title">
+                <h1>Série Loup Solitaire : La Forteresse Maudite</h1>
+            </div>
+        </header>
+
+        <section id="mainContent">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Items</a>
+                    </li>
+                    <li>
+                        <a href="tutorial.html#combat" target="_blank">Tutoriel</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Quitter l'aventure</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="fight">
+                <div>
+                    <h1>Combat!</h1>
+                </div>
+                <div class="current_page">
+                    <p>
+                        45
+                    </p>
+                </div>
+                <section class="enemy_profile">
+                    <figure>
+                        <img src="#" alt="Hordes de rats géants" title="Hordes de rats géants"/>
+                        <p>
+                            Horde de rats géants
+                        </p>
+                    </figure>
+                    <aside>
+                        <h1>Profil adversaire</h1>
+                        <div class="caracteristics">
+                            <div class="endurance">
+                                <label>Endurance : </label>
+                                <progress value="20" max="20" class="progress_bar" id="progress_bar_e_enemy">
+
+                                </progress>
+                                <span class="progress_label">20 pts</span>
+                            </div>
+                            <div class="hability">
+                                <label>Habileté : </label>
+                                <progress value="15" max="15" class="progress_bar" id="progress_bar_h_enemy">
+
+                                </progress>
+                                <span class="progress_label">15 pts</span>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+
+                <!-- Tableau décrivant l'actuel round -->
+                <section class="round_caracteristic">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Quotient d'attaque</td>
+                                <td>Nombre aléaroire</td>
+                                <td>Pertes adversaire</td>
+                                <td>Pertes joueur</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>8</td>
+                                <td>11</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- Plateau du joueur avec image + caractéristiques de combats -->
+                <section class="player_profile">
+                    <figure>
+                        <img src="#" alt="Loup Solitaire" title="Loup Solitaire"/>
+                    </figure>
+                    <aside>
+                        <h1>Loup solitaire</h1>
+                        <div class="caracteristics">
+                            <div class="endurance">
+                                <label>Endurance : </label>
+                                <progress value="17" max="19" class="progress_bar" id="progress_bar_e_player">
+
+                                </progress>
+                                <span class="progress_label">17 pts</span>
+                            </div>
+                            <div class="hability">
+                                <label>Habileté : </label>
+                                <progress value="22" max="29" class="progress_bar" id="progress_bar_h_player">
+
+                                </progress>
+                                <span class="progress_label">22 pts</span>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+            </section>
+            <div class="random_value">
+                <p>
+                    7
+                </p>
+            </div>
+            <section class="option_player">
+                <ul>
+                    <li>
+                        <!-- Bouton permettant de générer un nouveau nbre aléatoire + rafraichissement de la page
+                        avec modification des valeurs des joueur/adversaire -->
+                        <button>
+                            Attaque
+                        </button>
+                    </li>
+                    <li>
+                        <!-- Bouton qui apparaîtra au bout d'un certain nbre de tours -->
+                        <button class="run_away">
+                            Fuir!
+                        </button>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <footer>
+            <a href="#">Contact</a>
+            <p>
+                &copy; Copyright  by Lottier Jean-Michel &amp; Langrenay Pierre
+            </p>
+        </footer>
+    </body>
+</html>
