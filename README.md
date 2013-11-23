@@ -1,4 +1,6 @@
-####################################################### README ##########################################################################
+############################ README ###############################################
+
+LOG4420 : CONCEPTION DE SITES WEB DYNAM. ET TRANSACT.
 
 Conception de sites web complexes pour la génération dynamique de contenu et la gestion d'interactions avec les utilisateurs. 
 Présentation générale de l'architecture du web et du protocole HTTP (HyperText Transfer Protocol). Structure d'un document HTML 
