@@ -1,0 +1,170 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/initJeu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="initJeu.html" class="current">Jeu</a></li>
+                <li><a href="regles.html">Règle du jeu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<img src="../image/lone-wolf.gif" />
+
+	<section id="perso_creation">
+			<h1>CRÉATION DU PERSONNAGE</h1>
+
+			<form method="post" action="page1.html">
+				<fieldset id="valeurs_aleatoires">
+					<legend>Valeurs aléatoires</legend>
+
+					<table>
+						<tr>
+							<td class="left">Points d'habileté:</td>
+							<td id="pnt_habilete">18</td>
+						</tr>
+
+						<tr>
+							<td class="left">Points d'endurance:</td>
+							<td id="pnt_endurance">25</td>
+						</tr>
+
+						<tr>
+							<td class="left">Pieces d'or: </td>
+							<td id="pieces_or">10</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset id="disciplines">
+					<legend>Disciplines</legend>	
+					<p>Choisir 3 disciplines:</p>
+
+					<section class="left">
+							<section>
+								<input type="checkbox" name="scienceArme" />
+								<label for="scienceArme">La science des armes</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="controleAnimal" />
+								<label for="controleAnimal">Contrôle animal</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="scienceMedical" />
+								<label for="scienceMedical"></label>Science médical
+							</section>
+
+							<section>
+								<input type="checkbox" name="invisibilite" />
+								<label for="invisibilite">Invisibilité</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="artChasse" />
+								<label for="artChasse"></label>Art de la chasse
+							</section>
+					</section>
+
+					<section class="right">
+							<section>
+								<input type="checkbox" name="exploration" />
+								<label for="exploration">Exploration</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="foudrPsychique" />
+								<label for="foudrPsychique">Foudroiement psychique</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="ecranPsychique" />
+								<label for="ecranPsychique">Écran psychique</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="nexus" />
+								<label for="nexus">Nexus</label>
+							</section>
+
+							<section>
+								<input type="checkbox" name="intuition" />
+								<label for="intuition">Intuition</label>
+							</section>
+					</section>
+				</fieldset>
+
+				<fieldset id="objets">
+					<legend>Objets initiaux</legend>	
+					<p>Choisir 5 objets:</p>
+
+					<section>
+							<input type="checkbox" name="epee" />
+							<label for="epee">Épée (Arme)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="arc" />
+							<label for="arc">Arc (Arme)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="carquois" />
+							<label for="carquois">Carquois (Object spécial)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="corde" />
+							<label for="corde">Corde (Object contenu dans le sac à dos</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="potionLaumspur" />
+							<label for="potionLaumspur">Potion de Laumspur (Objet contenu dans le sac à dos)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="poignard" />
+							<label for="poignard">Poignard (Arme)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="lanterne" />
+							<label for="lanterne">Lanterne (Object contenu dans le sac à dos)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="masseArmes" />
+							<label for="masseArmes">Masse d'armes (Arme)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="rationsSpeciales" />
+							<label for="rationsSpeciales">Trois rations spéciales (Repas)</label>
+					</section>
+
+					<section>
+							<input type="checkbox" name="grainesFeu" />
+							<label for="grainesFeu">Trois graines de feu (Object spécial)</label>
+					</section>
+
+				</fieldset>
+				
+				<input type="submit" class="button" value="Jouer!" />
+			</form>
+
+	</section>
+
+	<footer>
+		<p>Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille</p>
+	</footer>
+</body>

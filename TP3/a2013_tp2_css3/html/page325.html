@@ -1,0 +1,160 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/page.css">
+    <link rel="shortcut icon" href="./image/LOG4420_icon_loup_solitaire_x16.png">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="../js/battle.js"></script>
+    <script type="text/javascript" src="../js/stats.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="initJeu.html" class="current">Jeu</a>
+                </li>
+                <li>
+                    <a href="regles.html">Règle du jeu</a>
+                </li>
+            </ul>
+        </nav>
+
+        <img src="../image/castle_death_logo.png" />
+        <p>
+            325
+        </p>
+    </header>
+
+    <section id="story">
+        <p>
+            You strike the seething water with a mighty splash and sink like a stone. The sharp tang of the lake fills your mouth, and its icy cold embrace numbs your muscles. Your first impulse on hitting the water is to lash out with your arms and swim, but you are hampered by a mass of plant life that coils around your flailing limbs. Desperate for air, you hack blindly at the weeds that now threaten to drag you to a watery grave.
+        </p>
+
+        <p>
+            Fight the combat as normal. However, due to your lack of air, you must automatically deduct 2 ENDURANCE points for every round that you fight.
+        </p>
+
+        <section id="combat">
+            <p id="monster_name">
+                <strong>Black Lakeweed:</strong> COMBAT SKILL <span class="pnt_habilete_enemy">10</span> ENDURANCE <span class="pnt_endurance_enemy">50</span>
+            </p>
+
+            <section>
+                <button class="button">
+                    CONTINUER...
+                </button>
+                <button class="button">
+                    FUIR...
+                </button>
+            </section>
+        </section>
+
+        <section id="decision">
+            <img src="../image/decision.png" />
+            <div>
+                <p>
+                    If you survive the struggle, <a href="page158.html">turn to 158</a>.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <section id="stats">
+        <img src="../image/scroll.jpg" />
+        <div id="stats_data">
+            <h2>État courant du joueur</h2>
+            <table>
+                <tr id="pnt_endurance">
+                    <td class="left"><img src="../image/points_endurance.png" /></td>
+                    <td class="right">20 / 20</td>
+                </tr>
+
+                <tr id="pnt_attaque">
+                    <td class="left"><img src="../image/points_attaque.png" /></td>
+                    <td class="right">30</td>
+                </tr>
+
+                <tr id="pnt_gold">
+                    <td class="left"><img src="../image/pieces_or.png" /></td>
+                    <td class="right">10 / 50</td>
+                </tr>
+            </table>
+
+            <h3>Disciplines</h3>
+            <ul id="disciplines">
+                <li>
+                    Sciences des armes
+                </li>
+                <li class="second">
+                    Exploration
+                </li>
+                <li>
+                    Nexus
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <p>
+        <a href="#lightbox" class="button">Regarder Sac À Dos</a>
+    </p>
+
+    <div id="lightbox">
+        <section id="sac_a_dos">
+            <a href="#" class="close_msg"></a>
+            <img src="../image/backpack.png" />
+            <h3 class="sacArmesTitre" onclick="openBag('.sacArmes')">Armes</h3>
+            <div class="sacArmes">
+                <ul>
+
+                </ul>
+            </div>
+            <h3 class="sacRepasTitre" onclick="openBag('.sacRepas')">Repas</h3>
+            <div class="sacRepas">
+                <ul>
+
+                </ul>
+            </div>
+            <h3 class="sacObjSpeTitre" onclick="openBag('.sacObjSpe')">Objets spéciaux</h3>
+            <div class="sacObjSpe">
+                <ul>
+
+                </ul>
+            </div>
+            <h3 class="sacObjTitre" onclick="openBag('.sacObj')">Objets</h3>
+            <div class="sacObj">
+                <ul>
+
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="player_defeat" class="popup_defeat">
+        <div>
+            <a href="#close_popup" title="Close" class="close_popup">&times;</a>
+            <h1>Fin de l'avanture</h1>
+            <p>
+                Votre vie et votre quête prend fin ici
+            </p>
+            <a href="../index.html" class="button">Page d'accueil</a>
+        </div>
+    </div>
+
+    <a href="page1.html" class="button restart">Recommencer l'histoire</a>
+
+    <footer>
+        <p>
+            Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille
+        </p>
+    </footer>
+</body>

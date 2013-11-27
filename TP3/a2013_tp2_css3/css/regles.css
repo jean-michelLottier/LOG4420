@@ -1,0 +1,38 @@
+img {
+	float: left;
+	display: block;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	width: 180px;
+	height: 300px
+}
+
+section {
+	width: 600px;
+	margin: 0px auto;
+	margin-bottom: 50px;
+}
+
+section h1 {
+	color: rgb(50,48,0);
+	text-align: center;
+	font-size: 2.2em;
+}
+
+section p {
+	text-align: justify;
+}
+
+@media screen and (max-width: 480px)
+{
+
+img {
+	float: none;
+	margin: 0 auto;
+}
+
+section {
+	width: 90%;
+}
+
+}

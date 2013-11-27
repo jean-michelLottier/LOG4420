@@ -1,0 +1,90 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+		<header>
+			<nav>
+				<ul>
+						<li><a href="../index.html">Accueil</a></li>
+						<li><a href="initJeu.html" class="current">Jeu</a></li>
+						<li><a href="regles.html">Règle du jeu</a></li>
+				</ul>
+			</nav>
+
+			<img src="../image/castle_death_logo.png" />
+			<p>203</p>
+		</header>
+
+		<section id="story">
+		<p>With your trembling hands clasped tightly around the slippery green rope, you fight to lock your feet together to prevent yourself from sliding into the heaving swell. The crack of splintering wood fills the night as the coracle shatters and sinks without trace.</p>
+		<img src="../image/monster_big_serpent.png" class="monster" />
+		<p>A sudden jolt runs the length of the rope, and a snaky head rises from the black water. It dips and swerves upwards, opening its jaws, set with fangs like long yellow knives, and fixing you with its blind white eyes. You are clinging to the body of a deadly Lekhor that is poised to strike.</p>
+
+
+			<section id="decision">
+					<img src="../image/decision.png" />
+					<div>
+							<p>If you wish to release your grip of this deadly serpent and dive into the water, <a href="page325.html">turn to 325</a>.</p>
+
+							<p>If you wish to draw a weapon and defend yourself against its venomous attack, <a href="">turn to 76</a>.</p>
+					</div>
+			</section>
+		</section>
+
+		<section id="stats">
+			<img src="../image/scroll.jpg" />
+			<div id="stats_data">
+					<h2>État courant du joueur</h2>
+					<table>
+						<tr>
+								<td class="left"><img src="../image/points_endurance.png" /></td>
+								<td class="right">20 / 20</td>
+						</tr>
+
+						<tr id="pnt_attaque">
+								<td class="left"><img src="../image/points_attaque.png" /></td>
+								<td class="right">30</td>
+						</tr>
+
+						<tr>
+								<td class="left"><img src="../image/pieces_or.png" /></td>
+								<td class="right">10</td>
+						</tr>
+					</table>
+
+					<h3>Disciplines</h3>
+					<ul id="disciplines">
+						<li>Sciences des armes</li>
+						<li class="second">Exploration</li>
+						<li>Nexus</li>
+					</ul>
+			</section>
+		</section>
+		
+		<p><a href="#lightbox" class="button">Regarder Sac À Dos</a></p>
+
+		<div id="lightbox">
+			<section id="sac_a_dos">
+					<a href="#" class="close_msg"></a>
+					<img src="../image/backpack.png" />
+					<ul>
+							<li>Épée (Arme)</li>
+							<li>Poignard (Arme)</li>
+							<li>Carquois (Object spécial)</li>
+							<li>Corde (Object contenu dans le sac à dos)</li>
+							<li>Lanterne (Object contenu dans le sac à dos)</li>
+					</ul>
+			</section>
+		</div>	
+
+		<a href="page1.html" class="button">Recommencer l'histoire</a>
+
+		<footer>
+			<p>Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille</p>
+		</footer>
+</body>

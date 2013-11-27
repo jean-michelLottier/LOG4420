@@ -1,0 +1,163 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/page.css">
+    <link rel="shortcut icon" href="./image/LOG4420_icon_loup_solitaire_x16.png">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="../js/stats.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="initJeu.html" class="current">Jeu</a>
+                </li>
+                <li>
+                    <a href="regles.html">Règle du jeu</a>
+                </li>
+            </ul>
+        </nav>
+
+        <img src="../image/castle_death_logo.png" />
+        <p>
+            158
+        </p>
+    </header>
+
+    <section id="story">
+        <p>
+            Gasping for air, you claw your way to the surface and swim for the rocky shore. Heaving yourself from the cold water, you crouch down, breathless and exhausted, beside a line of huge boulders, half-buried in the coal-black sand, and take stock of your belongings. You have lost two items from your Backpack, and all the food has been ruined by the tainted water (erase all Meals and two Backpack Items of your choice from your Action Chart).
+        </p>
+
+        <!-- Prise de décision... -->
+        <form method="post" class="itemsAJeter">
+            <fieldset>
+                <legend>
+                    Choisir 2 Items À Jeter...
+                </legend>
+            </fieldset>
+
+            <input type="submit" class="button" value="Jeter!" />
+        </form>
+        <!--form method="post" class="itemsAAjouter">
+        <fieldset>
+        <legend>
+        Choisir 1 Item À ajouter...
+        </legend>
+
+        <input type="checkbox" id="toto_(Arme)"/>
+        <label for="toto_(Arme)">toto (Arme)</label>
+        <br />
+        <input type="checkbox" id="pain_(Repas)"/>
+        <label for="pain_(Repas)">pain (Repas)</label>
+        <br />
+        </fieldset>
+        <input type="submit" class="button" value="Ajouter!" />
+        </form-->
+
+        <p>
+            No sooner have you managed to control your breathing than you hear the sound of scraping, as if some heavy weight were being dragged across the rocks to your left. A vertical crack appears in the surface of the nearest boulder, and a sickly yellow light washes over you. It is not a boulder—you are staring at a huge eye.
+        </p>
+
+        <section id="decision">
+            <img src="../image/decision.png" />
+            <div>
+                <p>
+                    If you wish to draw your weapon and attack the eye, <a href="page265.html">turn to 265</a>.
+                </p>
+
+                <p>
+                    If you wish to leap to your feet and escape towards the sheer rock base of Kazan-Oud, <a href="">turn to 41</a>.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <section id="stats">
+        <img src="../image/scroll.jpg" />
+        <div id="stats_data">
+            <h2>État courant du joueur</h2>
+            <table>
+                <tr id="pnt_endurance">
+                    <td class="left"><img src="../image/points_endurance.png" /></td>
+                    <td class="right">20 / 20</td>
+                </tr>
+
+                <tr id="pnt_attaque">
+                    <td class="left"><img src="../image/points_attaque.png" /></td>
+                    <td class="right">30</td>
+                </tr>
+
+                <tr id="pnt_gold">
+                    <td class="left"><img src="../image/pieces_or.png" /></td>
+                    <td class="right">10 / 50</td>
+                </tr>
+            </table>
+
+            <h3>Disciplines</h3>
+            <ul id="disciplines">
+                <li>
+                    Sciences des armes
+                </li>
+                <li class="second">
+                    Exploration
+                </li>
+                <li>
+                    Nexus
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <p>
+        <a href="#lightbox" class="button">Regarder Sac À Dos</a>
+    </p>
+
+    <div id="lightbox">
+        <section id="sac_a_dos">
+            <a href="#" class="close_msg"></a>
+            <img src="../image/backpack.png" />
+            <h3 class="sacArmesTitre" onclick="openBag('.sacArmes')">Armes</h3>
+            <div class="sacArmes">
+                <ul>
+
+                </ul>
+            </div>
+            <h3 class="sacRepasTitre" onclick="openBag('.sacRepas')">Repas</h3>
+            <div class="sacRepas">
+                <ul>
+
+                </ul>
+            </div>
+            <h3 class="sacObjSpeTitre" onclick="openBag('.sacObjSpe')">Objets spéciaux</h3>
+            <div class="sacObjSpe">
+                <ul>
+
+                </ul>
+            </div>
+            <h3 class="sacObjTitre" onclick="openBag('.sacObj')">Objets</h3>
+            <div class="sacObj">
+                <ul>
+
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <a href="page1.html" class="button restart">Recommencer l'histoire</a>
+
+    <footer>
+        <p>
+            Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille
+        </p>
+    </footer>
+</body>

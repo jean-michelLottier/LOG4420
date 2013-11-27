@@ -1,0 +1,91 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+		<header>
+			<nav>
+				<ul>
+						<li><a href="../index.html">Accueil</a></li>
+						<li><a href="initJeu.html" class="current">Jeu</a></li>
+						<li><a href="regles.html">Règle du jeu</a></li>
+				</ul>
+			</nav>
+
+			<img src="../image/castle_death_logo.png" />
+			<p>265</p>
+		</header>
+
+		<section id="story">
+			<p>You plunge your weapon into the monstrous eye and gouts of a luminous jelly-like substance pour from the wound. A ghastly inhuman scream of pain rises from the ground beneath your feet. Jets of hissing steam erupt through the sand, and a stinging cloud of grit assails your eyes.</p>
+
+			<img src="../image/monster_luminous_jelly.png" class="monster" />
+			<p>You reel backwards, shielding your face from the blast, but an unexpected blow to your legs sends you sprawling to the ground (lose 2 ENDURANCE points). Before you can rise, a warty, green tentacle coils round your waist and pulls you slowly towards the mutilated eye.</p>
+
+			<section id="decision">
+					<img src="../image/decision.png" />
+					<div>
+							<p>If you have the Magnakai Discipline of Psi-surge and wish to use it, <a href="">turn to 190</a>.</p>
+
+							<p>If you do not possess this skill, or if you do not wish to use it, <a href="page121.html">turn to 121</a>.</p>
+					</div>
+			</section>
+		</section>
+
+		<section id="stats">
+			<img src="../image/scroll.jpg" />
+			<div id="stats_data">
+					<h2>État courant du joueur</h2>
+					<table>
+						<tr>
+								<td class="left"><img src="../image/points_endurance.png" /></td>
+								<td class="right">20 / 20</td>
+						</tr>
+
+						<tr id="pnt_attaque">
+								<td class="left"><img src="../image/points_attaque.png" /></td>
+								<td class="right">30</td>
+						</tr>
+
+						<tr>
+								<td class="left"><img src="../image/pieces_or.png" /></td>
+								<td class="right">10</td>
+						</tr>
+					</table>
+
+					<h3>Disciplines</h3>
+					<ul id="disciplines">
+						<li>Sciences des armes</li>
+						<li class="second">Exploration</li>
+						<li>Nexus</li>
+					</ul>
+			</section>
+		</section>
+		
+		<p><a href="#lightbox" class="button">Regarder Sac À Dos</a></p>
+
+		<div id="lightbox">
+			<section id="sac_a_dos">
+					<a href="#" class="close_msg"></a>
+					<img src="../image/backpack.png" />
+					<ul>
+							<li>Épée (Arme)</li>
+							<li>Poignard (Arme)</li>
+							<li>Carquois (Object spécial)</li>
+							<li>Corde (Object contenu dans le sac à dos)</li>
+							<li>Lanterne (Object contenu dans le sac à dos)</li>
+					</ul>
+			</section>
+		</div>	
+
+		<a href="page1.html" class="button">Recommencer l'histoire</a>
+
+
+		<footer>
+			<p>Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille</p>
+		</footer>
+</body>

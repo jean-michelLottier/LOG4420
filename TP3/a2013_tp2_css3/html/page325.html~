@@ -1,0 +1,108 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+		<header>
+			<nav>
+				<ul>
+						<li><a href="../index.html">Accueil</a></li>
+						<li><a href="initJeu.html" class="current">Jeu</a></li>
+						<li><a href="regles.html">Règle du jeu</a></li>
+				</ul>
+			</nav>
+
+			<img src="../image/castle_death_logo.png" />
+			<p>325</p>
+		</header>
+
+		<section id="story">
+			<p>You strike the seething water with a mighty splash and sink like a stone. The sharp tang of the lake fills your mouth, and its icy cold embrace numbs your muscles. Your first impulse on hitting the water is to lash out with your arms and swim, but you are hampered by a mass of plant life that coils around your flailing limbs. Desperate for air, you hack blindly at the weeds that now threaten to drag you to a watery grave.</p>
+
+			<p>Fight the combat as normal. However, due to your lack of air, you must automatically deduct 2 ENDURANCE points for every round that you fight.</p>
+
+			<section id="combat">
+				<p id="monster_name"><strong>Black Lakeweed:</strong> COMBAT SKILL 10   ENDURANCE 50</p>
+				<section>
+					<h3>Ronde combat: 1</h3>
+					<p>Ratio de combat: -10<br/>Chiffre aléatoire: 5</p>
+					<p>Ton enemi a obtenu <i>10</i> dégâts -<br/>et a maintenant <i>40</i> points d'endurance.</p>
+					<p>Lone Wolf a eu <i>8</i> dégâts -<br/>et a maintenant <i>36</i> points d'endurance.</p>
+				</section>
+
+				<section>
+					<h3>Ronde combat: 2</h3>
+					<p>Ratio de combat: -10<br/>Chiffre aléatoire: 1</p>
+					<p>Ton enemi a eu <i>6</i> dégâts -<br/>et a maintenant <i>34</i> points d'endurance.</p>
+					<p>Lone Wolf a eu <i>2</i> dégâts -<br/>et a maintenant <i>32</i> points d'endurance.</p>
+					<p>Désirez-vous entamer une autre ronde?</p>
+					<button onclick=alert('PROCHAINEMENT...') class="button">CONTINUER...</button>
+					<button onclick=alert('PROCHAINEMENT...') class="button">FUIR...</button>
+				</section>
+			</section>
+
+			<section id="decision">
+					<img src="../image/decision.png" />
+					<div>
+							<p>If you survive the struggle, <a href="page158.html">turn to 158</a>.</p>
+					</div>
+			</section>
+		</section>
+
+		<section id="stats">
+			<img src="../image/scroll.jpg" />
+			<div id="stats_data">
+					<h2>État courant du joueur</h2>
+					<table>
+						<tr>
+								<td class="left"><img src="../image/points_endurance.png" /></td>
+								<td class="right">20 / 20</td>
+						</tr>
+
+						<tr id="pnt_attaque">
+								<td class="left"><img src="../image/points_attaque.png" /></td>
+								<td class="right">30</td>
+						</tr>
+
+						<tr>
+								<td class="left"><img src="../image/pieces_or.png" /></td>
+								<td class="right">10</td>
+						</tr>
+					</table>
+
+					<h3>Disciplines</h3>
+					<ul id="disciplines">
+						<li>Sciences des armes</li>
+						<li class="second">Exploration</li>
+						<li>Nexus</li>
+					</ul>
+			</section>
+		</section>
+		
+		<p><a href="#lightbox" class="button">Regarder Sac À Dos</a></p>
+
+		<div id="lightbox">
+			<section id="sac_a_dos">
+					<a href="#" class="close_msg"></a>
+					<img src="../image/backpack.png" />
+					<ul>
+							<li>Épée (Arme)</li>
+							<li>Poignard (Arme)</li>
+							<li>Carquois (Object spécial)</li>
+							<li>Corde (Object contenu dans le sac à dos)</li>
+							<li>Lanterne (Object contenu dans le sac à dos)</li>
+					</ul>
+			</section>
+		</div>	
+
+		<a href="page1.html" class="button">Recommencer l'histoire</a>
+
+
+		<footer>
+			<p>Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille</p>
+		</footer>
+</body>

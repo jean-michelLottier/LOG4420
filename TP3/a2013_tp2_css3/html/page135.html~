@@ -1,0 +1,91 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Castle Death></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+		<header>
+			<nav>
+				<ul>
+						<li><a href="../index.html">Accueil</a></li>
+						<li><a href="initJeu.html" class="current">Jeu</a></li>
+						<li><a href="regles.html">Règle du jeu</a></li>
+				</ul>
+			</nav>
+
+			<img src="../image/castle_death_logo.png" />
+			<p>135</p>
+		</header>
+
+		<section id="story">
+			<p>A streak of green, forked lightning lights up the collapsed roof of Kazan-Oud, and for a second, it looks like the shattered ribs of a giant lizard. There is another flash of lightning, and a hundred tower windows glare at you like empty eyes edged with slivers of broken glass. A line of carved stone gargoyles adorns the black stone walls, overhanging the jetty. Rings of rusted iron are clamped in their snarling jaws, each wound round with slime-encrusted ropes that dangle in the water. At the jetty, it is deep enough to allow a large vessel to dock, but the current and the swell of the tide make it increasingly difficult for you to control your tiny boat.</p>
+
+			<p>Your stomach tightens as the swell threatens to dash you against the jetty.</p>
+
+			<section id="decision">
+					<img src="../image/decision.png" />
+					<div>
+							<p>If you have the Magnakai Discipline of Divination, <a href="">turn to 57</a>.</p>
+
+							<p>If you wish to stop paddling and try to grab one of the ropes, <a href="page203.html">turn to 203</a>.</p>
+
+							<p>If you decide to abandon the boat and swim towards a line of rocks further west, <a href="page325.html">turn to 325</a>.</p>
+					</div>
+			</section>
+		</section>
+
+		<section id="stats">
+			<img src="../image/scroll.jpg" />
+			<div id="stats_data">
+				<h2>État courant du joueur</h2>
+					<table>
+						<tr>
+								<td class="left"><img src="../image/points_endurance.png" /></td>
+								<td class="right">20 / 20</td>
+						</tr>
+
+						<tr id="pnt_attaque">
+								<td class="left"><img src="../image/points_attaque.png" /></td>
+								<td class="right">30</td>
+						</tr>
+
+						<tr>
+								<td class="left"><img src="../image/pieces_or.png" /></td>
+								<td class="right">10</td>
+						</tr>
+					</table>
+
+					<h3>Disciplines</h3>
+					<ul id="disciplines">
+						<li>Sciences des armes</li>
+						<li class="second">Exploration</li>
+						<li>Nexus</li>
+					</ul>
+			</section>
+		</section>
+	
+		<p><a href="#lightbox" class="button">Regarder Sac À Dos</a></p>
+
+		<div id="lightbox">
+			<section id="sac_a_dos">
+					<a href="#" class="close_msg"></a>
+					<img src="../image/backpack.png" />
+					<ul>
+							<li>Épée (Arme)</li>
+							<li>Poignard (Arme)</li>
+							<li>Carquois (Object spécial)</li>
+							<li>Corde (Object contenu dans le sac à dos)</li>
+							<li>Lanterne (Object contenu dans le sac à dos)</li>
+					</ul>
+			</section>
+		</div>	
+
+		<a href="page1.html" class="button">Recommencer l'histoire</a>
+
+		<footer>
+			<p>Castle Death - Lone Wolf par Konstantinos Lambrou-Latreille</p>
+		</footer>
+</body>
