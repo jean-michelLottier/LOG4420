@@ -1,0 +1,211 @@
+body {
+    background-color: #ffffe6;
+}
+
+a.button {
+    margin: 40px;
+}
+
+header img {
+    display: block;
+    margin: 10px 10%;
+    margin-top: 30px;
+}
+
+header p {
+    position: absolute;
+    top: 127px;
+    left: 497px;
+    margin: 0px 10%;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 50px;
+    text-align: center;
+}
+
+section {
+    font-family: Souvenir, Georgia, "Times New Roman", Times, serif;
+}
+
+section#story {
+    position: relative;
+    left: 20px;
+    width: 550px;
+    text-align: justify;
+    margin: 0px 10%;
+}
+
+section#story section#decision {
+    border: 5px gray groove;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+section#story section#decision a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+section#story section#decision a.disabled {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}
+
+section#story section#decision img {
+    width: 172px;
+    height: 132px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+section#story section#decision div {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+}
+
+section#story img.monster {
+    width: 200px;
+    height: 340px;
+    display: inline-block;
+    margin: 20px 0;
+    margin-right: 50px;
+}
+
+section#story img.monster+p {
+    width: 295px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section#story p.situation button {
+    margin: 15px 0px 30px;
+    width: 90px;
+    height: 40px;
+    line-height: 0;
+}
+
+a#recommencer {
+    display: block;
+    margin: 50px auto;
+}
+
+#invisibleForm {
+    display: none;
+}
+
+/*
+ * SECTION CONTENU LES COMBATS
+ */
+section#combat {
+    border: 5px gray groove;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+section#combat button.button {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    font-size:13px;
+    margin: 15px;
+    line-height: 0;
+}
+
+/*
+ * SECTION D'UNE MISE EN SITUATION POUR JETER DES OBJETS.
+ */
+section#jeterObjets button {
+    margin: 15px 0 30px 0;
+    width: 75px;
+    height: 40px;
+    line-height: 0;
+}
+
+section#jeterObjets label {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+
+header img {
+    margin: 10px 10px;
+    margin-top: 30px;
+}
+
+header p {
+    margin: 0 10px;
+}
+
+section#story {
+    margin: 0 5%;
+    width: 450px;
+}
+
+section#story img.monster {
+    margin-right: 40px;
+}
+
+section#story img.monster + p {
+    width: 200px;
+}
+
+section#story section#decision img {
+        display: block;
+        margin: 0 auto;
+}
+
+section#story section#decision div {
+        display: block;
+        margin: 0 auto;
+}
+
+section#story img#gameover {
+    width: 426px;
+    height: 320px;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+section#story {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section#story section#decision img {
+    display: block;
+    margin: 0 auto;
+}
+
+section#story section#decision div {
+    display: block;
+    width: 90%;
+}
+
+section#story img#gameover {
+    width: 213;
+    height: 160px;
+}
+
+section#story img.monster {
+        display: block;
+        margin: 0 auto;
+}
+
+section#story img.monster + p {
+    width: 100%;
+}
+
+section#story img#gameover {
+    display: block;
+    width: 320px;
+    height: 240px;
+    margin-bottom: 50px;
+}
+
+}

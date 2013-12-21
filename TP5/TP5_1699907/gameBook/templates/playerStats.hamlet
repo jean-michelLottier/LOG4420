@@ -1,0 +1,24 @@
+<section id="stats">
+    <img src=@{StaticR img_scroll_jpg} />
+    <div id="stats_data" ng-controller="CharacteristicsCtrl">
+        <h2>État courant du joueur
+        <table>
+            <tr>
+                <td class="left"><img src=@{StaticR img_points_endurance_png} />
+                <td class="right"><span id="pnt_endurance_restante"></span> / <span id="pnt_endurance_total">#{pntEndurance person}</span>
+
+            <tr id="pnt_attaque">
+                <td class="left"><img src=@{StaticR img_points_attaque_png} />
+                <td class="right"><span id="nb_pnt_attaque"></span>/19
+
+            <tr>
+                <td class="left"><img src=@{StaticR img_pieces_or_png} />
+                <td class="right"><span id="nb_pieces_or"></span> / 50
+
+        <h3>Disciplines
+        <ul id="disciplines">
+            $forall discipline <- disciplines person
+                <li>#{discipline}
+            <!--li name="weaponMastery">Sciences des armes</li>
+            <li name="pathsmanship" class="second">Exploration</li>
+            <li name="nexus">Nexus</li-->

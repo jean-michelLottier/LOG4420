@@ -1,0 +1,24 @@
+Default: &defaults
+  user: gameBook
+  password: gameBook
+  host: localhost
+  database: gameBook
+  connections: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: gameBook_test
+  <<: *defaults
+
+Staging:
+  database: gameBook_staging
+  connections: 100
+  <<: *defaults
+
+Production:
+  database: gameBook_production
+  connections: 100
+  host: localhost
+  <<: *defaults

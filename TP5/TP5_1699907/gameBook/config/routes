@@ -1,0 +1,14 @@
+/static StaticR Static getStatic
+/auth   AuthR   Auth   getAuth
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ HomeR GET POST
+/rules RulesR GET
+/initGame InitGameR GET POST
+/game GameR GET POST
+
+/blog BlogR GET POST
+/blog/#ArticleId ArticleR GET
+/service/#Int WebServiceR GET POST

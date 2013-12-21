@@ -1,0 +1,19 @@
+/*
+ * On attend que le DOM qui complètement créé avant de exécuter les fonctions
+ */
+$(document).ready( function() {
+
+    $("nav #jeu").addClass("current");
+
+    /*
+     * Fonction qui génère des valeurs aléatoires pour les points d'habileté,
+     * les points d'endurance et les pièces d'or du joueur.
+     */	
+    $( "#pnt_habilete" ).attr("readonly", true);
+    $( "#pnt_endurance" ).attr("readonly", true);
+    $( "#pieces_or" ).attr("readonly", true);
+    
+    $( "#pnt_habilete" ).val(Math.floor((Math.random()*10)+10));
+    $( "#pnt_endurance" ).val(Math.floor((Math.random()*10)+20));
+    $( "#pieces_or" ).val(Math.floor((Math.random()*10)+10));
+});

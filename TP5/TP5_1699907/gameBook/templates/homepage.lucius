@@ -1,0 +1,51 @@
+img {
+	width: 558px;
+	height: 222px;
+	margin: 20px auto; /*Centré l'image horizontalement*/
+	display: block; /*img est une balise inline, donc on la tranforme en block.*/
+}
+
+section {
+	width: 600px;
+	margin: 0px auto;
+	margin-bottom: 50px;
+}
+
+section h1 {
+	color: rgb(50,48,0);
+	text-align: center;
+	font-size: 2.2em;
+}
+
+section h2 {
+	color: rgb(50, 48, 0);
+	text-align: center;
+	font-size: 1.5em;
+}
+
+section p {
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 480px)
+{
+
+section {
+	width: 90%;
+}
+
+img {
+	width: 250px;
+	height: 106px;
+}
+
+section h1 {
+	font-size: 1.5em;
+}
+
+section h2 {
+	font-size: 1.3em;
+}
+
+}

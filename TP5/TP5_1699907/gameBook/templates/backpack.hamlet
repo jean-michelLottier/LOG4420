@@ -1,0 +1,14 @@
+<p><a href=@{GameR}#lightbox class="button">Regarder Sac À Dos</a></p>
+
+<div id="lightbox">
+    <section id="sac_a_dos">
+        <a href="#" class="close_msg"></a>
+        <img src=@{StaticR img_backpack_png} />
+        <ul>
+            $forall item <- items person
+                <li name=#{item}>#{item}
+            <!--li name="Épée">Épée</li>
+            <li name="Poignard">Poignard</li>
+            <li name="Carquois">Carquois</li>
+            <li name="Corde">Corde</li>
+            <li name="Lanterne">Lanterne</li-->

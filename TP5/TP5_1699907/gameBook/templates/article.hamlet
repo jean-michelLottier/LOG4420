@@ -1,0 +1,2 @@
+<h1> #{articleNumber article}
+<article> #{articleContent article}

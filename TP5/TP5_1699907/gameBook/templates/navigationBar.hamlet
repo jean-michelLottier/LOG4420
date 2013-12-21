@@ -1,0 +1,6 @@
+<header>
+    <nav>
+        <ul>
+            <li><a id="accueil">Accueil</a>
+            <li><a id="jeu">Jeu</a>
+            <li><a href="@{RulesR}" id="regleJeu">Règle du jeu</a>

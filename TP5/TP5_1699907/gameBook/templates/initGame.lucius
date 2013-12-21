@@ -1,0 +1,82 @@
+img {
+	margin: 20px auto;
+	display: block;
+	width: 558px;
+	height: 222px;
+}
+
+section#perso_creation {
+	width: 600px;
+	margin: 0px auto;	
+	margin-bottom: 50px;
+}
+
+section#perso_creation h1 {
+	color: rgb(50, 48, 0);
+	text-align: center;
+	font-size: 2.2em;
+}
+
+input#pnt_habilete, input#pnt_endurance, input#pieces_or {
+	width: 60px;
+	text-align: center;
+}
+
+form legend {
+	font-weight: bold;
+	color: rgb(50, 48, 0);
+	font-size: 1.5em;
+}
+
+form fieldset#disciplines {
+	margin-top: 30px; 
+	margin-bottom: 30px;
+}
+
+
+form fieldset#disciplines section {
+		margin: 0px;
+}
+
+form fieldset#disciplines section.left, form fieldset#disciplines section.right {
+		width: 260px;
+		display:inline-block;
+}
+
+form fieldset#objets section {
+		margin: 0px;
+}
+
+form fieldset#objets {
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 480px)
+{
+
+section#perso_creation {
+	width: 90%;
+}
+
+section#perso_creation h1 {
+	font-size: 1.5em;	
+}
+
+form legend {
+	font-size: 1.2em;
+}
+
+img {
+	width: 250px;
+	height: 106px;
+}
+
+table {
+	width: 100%;	
+}
+
+form fieldset#disciplines section.left, form fieldset#disciplines section.right {
+	width: 100%;
+}
+
+}

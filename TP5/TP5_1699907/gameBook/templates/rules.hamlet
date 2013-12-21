@@ -1,0 +1,84 @@
+<section>
+    <h1>RÈGLES DU JEU</h1>
+    <img src=@{StaticR img_lone_wolf_castle_death_jpg} />
+    <p class="first">Nous présentons dans cette section les principes de fonctionnement du jeu, afin de vous fournir une vision globale de ce que vous devrez implémenter tout au long du trimestre. Mais toute la logique et les calculs derrière ces principes ne seront pas implémentés avant le TP3.
+    
+    <p>Lorsqu’on débute le jeu, trois valeurs sont générées aléatoirement. La première, que nous appellerons points d’habileté, comprise entre 10 et 19, détermine l’habileté au combat. La deuxième représente les points d’endurance et est comprise entre 20 et 29. Lorsqu’un joueur est blessé dans un combat, il perd des points d’endurance. Lorsque la valeur sera à zéro, il sera considéré mort et son aventure sera donc terminée. Dans certaines situations, il sera possible de récupérer des points d’endurance, mais on ne pourra jamais dépasser la valeur initiale. La troisième valeur, comprise entre 10 et 19, indique le nombre de pièces d’or que possède le joueur au départ. À noter qu’à aucun moment le joueur ne pourra posséder sur lui plus de 50 pièces d’or (le surplus pourra être déposé dans un coffre-fort).
+    
+    <p>Une fois que ces trois valeurs ont été générées, le joueur doit choisir trois disciplines
+        parmi les 10 disponibles :
+
+    <ul>
+        <li>La science des armes : Permet de manier toutes sortes d’armes. Il faudra en choisir trois parmi celles-ci : le poignard, la lance, la masse d’armes, le marteau de guerre, la hache, l’épée, le bâton et le glaive. Par contre, au cours de l’aventure, il ne sera pas possible de posséder plus de deux armes à la fois. Chaque fois que le joueur combat avec une de ces armes, il gagne trois points d’enturance supplémentaires.
+        
+        <li>Contrôle animal : Permet de communiquer avec certains animaux ou deviner leurs intentions.
+        
+        <li>Science médicale : Permet d’ajouter 1 point d’endurance à chaque fois que le joueur a parcouru un paragraphe complet sans avoir à combattre un ennemi. Cette discipline permet aussi de soigner certaines maladies, de guérir la cécité et toutes sortes de blessures, aussi bien celles reçues que celles infligées. Elle fait également connaître les propriétés des plantes, des herbes, des racines et des potions.
+
+        <li>Invisibilité : Permet de devenir invisible. Elle donne la possibilité de masquer la chaleur et l’odeur du corps, d’adopter les mœurs et de parler le dialecte de n’importe quelle ville visitée.
+        
+        <li>Art de la chasse : Avec cette discipline, le joueur pourra chasser pour se procurer de la nourriture (même dans le désert ou une région aride). Elle permet aussi de se déplacer très vite et avec agilité, évitant ainsi de perdre des points d’habileté lors d’une attaque surprise ou d’une embuscade.
+        
+        <li>Exploration : Permet de toujours choisir le bon chemin, de lire les langues étrangères, décrypter les symboles, reconnaître les empreintes et autres traces (même si elles ont été brouillées) et déceler la présence de la plupart des pièges. Elle permet aussi de repérer intuitivement le nord.
+        
+        <li>Foudroiement psychique : Permet d’attaquer un ennemi par la seule force de l’esprit. On peut l’utiliser en même temps qu’une arme de combat ordinaire et l’on dispose alors de 4 points supplémentaires d’habileté. À chaque utilisation du foudroiement psychique, le joueur perd 2 points d’endurance. Une forme atténuée, appelée Puissance Psychique, peut être utilisée contre un ennemi sans perdre des points d’Endurance, mais elle ne procure que 2 points d’habileté supplémentaires. Le foudroiement psychique ne peut pas être utilisé si le total d’endurance est égal ou inférieur à 6.
+        
+        <li>Écran psychique : Permet de ne pas perdre de points d’endurance lorsqu’on est attaqué par un créature faisant usage de force psychique. Elle augmente les moyens de défense contre l’hypnose et les illusions surnaturelles.
+        
+        <li>Nexus : Permet de supporter la chaleur et le froid sans perdre de points d’endurance. Permet aussi de déplacer des objets par le biais de la pensée.
+        
+        <li>Intuition : Permet de deviner les dangers imminents, les intentions d’un inconnu et la natures des objets étranges. Permet aussi de communniquer par télépathie.
+        
+
+    <p>Finalement, avant de commencer l’aventure, il doit monter son équipement, jusqu’à un maximum de cinq items. Le joueur ne peut jamais porter plus de deux armes, et son sac à dos ne peut contenir plus de huit objets (à noter que les pièces d’or ne sont pas dans le sac à dos, mais dans une bourse portée à la ceinture). Il choisit parmi les items suivants :
+
+    <ul>
+        <li>Épée : (Arme). On la porte à la main.
+        
+        <li>Arc : (Arme). On la porte à la main.
+        
+        <li>Carquois : (Objet spécial) Contient six flèches. On le porte en bandoulière.
+        
+        <li>Corde : (Objet contenu dans le sac à dos).
+        
+        <li>Potion de Laumspur : (Objet contenu dans le sac à dos) Permet de reprendre 4 points d’endurance si on la boit à la fin d’un combat.
+        
+        <li>Poignard : (Arme). On le porte à la main.
+        
+        <li>Lanterne : (Objet contenu dans le sac à dos).
+        
+        <li>Masse d’armes : (Arme). On la porte à la main.
+        
+        <li>Trois rations spéciales : (Repas) Chaque ration représente un repas et occupe la place d’un objet dans le sac à dos.
+        
+        <li>Trois graines de feu : (Objet spécial) Lorsqu’on jette une de ces graines sur le feu, elle explose et brûle d’un feu vif. On les met dans la poche.
+
+    <p>À tout moment dans le jeu, sauf dans un combat, le joueur peut échanger des objets qu’il possède ou s’en débarrasser. Les règles d’utilisation des objets sont les suivantes :
+
+    <ul>
+        <li>Armes Pour pouvoir les utiliser, il faut avoir choisi la discipline de la science des armes. Dans ce cas, si le joueur dispose d’une arme en bon état et qu’il est impliqué dans un combat avec un ennemi, il pourra ajouter 3 points d’habileté à son total. Un combat sans arme fait perdre 4 points d’habileté.
+        
+        <li>Arcs et flèches La flèche permet de frapper les ennemis à distance. Il faut un carquois pour contenir les flèches. Chaque fois qu’une flèche est utilisée, elle n’est plus récupérable. On ne peut pas utiiser les flèches pour les combats au corps à corps. Nous verrons plus loin que le lancer d’une fléche implique un nombre choisi aléatoirement. Si le joueur possède la science des armes dans ses disciplines, il ajoutera 3 points à cette valeur.
+        
+        <li>Pièces d’or Chaque fois que le joueur tue un ennemi et qu’il décide de fouiller son cadavre, il peut conserver les pièces d’or qu’il trouve.
+        
+        <li>Nourriture Si le joueur se trouve dans une situation où il doit prendre un repas et qu’il n’a aucune ration, il perdra 3 points d’endurance, sauf s’il maîtrise la discipline de la chasse.
+
+    <p>Durant l’aventure, le joueur peut être impliqué dans plusieurs combats. À chaque fois, les points d’habileté et d’endurance de l’ennemi seront spécifiés. Le joueur devra alors s’efforcer de tuer son adversaire en réduisant à zéro ses points d’endurance, tout en essayant lui-même de perdre le moins possible de points d’endurance. Chaque combat se déroule de la manière suivante :
+
+    <ol>
+        <li>Ajouter au total d’habileté du joueurs les points supplémentaires associés à certaines disciplines.
+        
+        <li>Soustraire de ce total les points d’habileté de l’adversaire. Ce résultat représente le quotient d’attaque.
+        
+        <li>Un nombre aléatoire entre 0 et 9 est choisi. En utilisant ce nombre et le quotient d’attaque, on consulte la table de correspondance illustrée aux figures 1a et 1b, afin de déterminer le nombre de points d’endurance qui seront perdus par le joueur et l’ennemi.
+        
+        <li>On diminue les points d’endurance du joueur et de l’ennemi.
+        
+        <li>À moins qu’une possibilité de fuite soit offerte ou que des indications différentes soient fournies, on recommence un nouveau round de combat, en retournant à l’étape 3. On continue ainsi jusqu’à ce qu’un des deux combattant soit mort.
+
+    <p>Si le joueur a la possibilité de fuir, il peut le faire à la fin d’un round, après avoir diminué ses points d’endurance.
+    
+    <p>D’autres règles du livre-jeu original, comme les niveaux d’entraînement et les cercles de savoir Mgnakaï, ne seront pas utilisées dans ce travail.
+    
+    <p>L’aventure se déroule comme suit. Le joueur commence au paragraphe 1 du livre. À certains moments, il peut avoir des choix à faire, qui l’emmèneront à un autre paragraphe du livre. À d’autres moments, il sera engagé dans des combats, qu’il devra mener en suivant les règles citées précédemment.

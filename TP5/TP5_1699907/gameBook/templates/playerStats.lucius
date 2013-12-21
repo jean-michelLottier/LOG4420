@@ -1,0 +1,78 @@
+/*
+ * STATISTIQUES DU JOUEUR
+ */
+section#stats {
+    position: fixed;
+    top: 80px;
+    left: 750px;
+    margin: 0px 10%;
+    height: 600px;
+}
+
+section#stats > img {
+    width: 380px;
+    height: 560px;
+}
+
+section#stats div#stats_data {
+    position: relative;
+    bottom: 520px;
+    left: 70px;
+}
+
+section#stats ul#disciplines {
+    list-style: none;
+}
+
+section#stats ul#disciplines li {
+    font-size: 16px;
+    font-family: Georgia; 
+}
+
+section#stats ul#disciplines li.second {
+    padding: 10px 0;
+}
+
+section#stats div#stats_data img {
+    display: block;
+    margin: 0px auto;
+}
+
+section#stats tr#pnt_attaque img{
+    margin: 15px auto;
+}
+
+section#stats td.right {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+
+section#stats {
+    left: 600px;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+section#stats {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+section#stats img {
+    display: block;
+    margin: 0 auto;
+}
+
+section#stats div#stats_data {
+    width: 300px;
+    margin: 0 auto;
+    left: 30px;
+}
+
+}

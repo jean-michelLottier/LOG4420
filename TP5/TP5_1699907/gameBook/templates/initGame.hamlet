@@ -1,0 +1,8 @@
+<img src=@{StaticR img_loneWolf_gif} />
+
+<section id="perso_creation">
+    <h1>CRÉATION DU PERSONNAGE
+
+    <form method=post action=@{InitGameR}>
+        ^{formWidget}
+        <input type="submit" class="button" value="Jouer!" />

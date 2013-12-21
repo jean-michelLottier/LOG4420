@@ -1,0 +1,18 @@
+/* FOOTER */
+footer {
+	width: 100%; /* L'en-tête doit prendre toute la largeur */
+	height: 40px; /* L'en-tête a une taille spécifique */
+	padding-top: 20px; /* BUG: Sans cette ligne, le haut de la boîte 'body' ne s'affiche pas en haut complètement.*/ 
+	padding-bottom: 10px;
+	background-color: rgba(1,1,1,0.8); /* Couleur arrière-plan légèrement transparent */
+	text-align: center; /* On aligne le texte à l'intérieur de l'en-tête au centre */
+	-webkit-box-shadow: 0px 0px 15px 0px #000000;
+	-moz-box-shadow: 0px 0px 15px 0px #000000;
+	box-shadow: 0px 0px 15px 0px #000000;
+}
+
+footer p {
+	color: white;
+	padding: 0;
+	margin: 0;
+}

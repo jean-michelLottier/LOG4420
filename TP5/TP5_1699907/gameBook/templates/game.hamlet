@@ -1,0 +1,40 @@
+<div ng-app ng-controller="PageCtrl">
+    <header>
+        <img src=@{StaticR img_castle_death_logo_png} />
+        <p id="pageNumber">{{pageNumber}}
+
+    <section id="story">
+        <p ng-repeat="contentElement in page.content">{{getContentElement(contentElement,"Paragraph")}}
+        
+        <img ng-repeat="contentElement in page.content" ng-if="contentElement.type == 'Image'" ng-src="{{contentElement.name}}" class="monster" ng-class="{{isMonster(contentElement)}}"/>
+        
+        <section id="combat" ng-repeat="contentElement in page.content" ng-if="contentElement.type == 'Battle'">
+            <p id="monster_name"><strong>{{contentElement.monsterName}}</strong> : HABILETÉ <span id="pnt_attaque_monstre">{{contentElement.monsterSkill}}</span> ENDURANCE <span id="pnt_endurance_monstre">{{contentElement.monsterLife}}</span>
+            <section class="choixCombat">
+                <button id="combattre" class="button" onclick="fight()">COMBATTRE
+                <button id="fuir" class="button" ng-click="change(158)">FUIR{{initFight(contentElement)}}
+
+        <section id="jeterObjets" ng-repeat="contentElement in page.content" ng-if="contentElement.type == 'Throw'">
+            <fieldset>
+                <legend>Choisir {{contentElement.numberItems}} items à jeter</legend>
+            <button class="button throwObj" onclick="throwItems()">Jeter!{{completeForm()}}
+
+        <p class="situation" ng-repeat="contentElement in page.content" ng-if="contentElement.type == 'LossPoints'">{{contentElement.text}} (vous perdez <span id="lifeLost">{{contentElement.pointsLost}}</span> points d'ENDURANCE).
+            <button id="confirmLossPnt" class="button" onclick="loseLifePoint()">Confirmer{{initLoseLifePnt()}}    
+       
+        $if not $ null (decision currentPage)
+            <section id="decision">
+                <img src=@{StaticR img_decision_png} />
+                <div>
+                    <p ng-repeat="decision in page.decisions">{{decision.decisionText}}, <a id={{decision.nextPage}} ng-click="change(decision.nextPage)">rendez-vous au {{decision.nextPage}}.</a>
+
+        <a href=@{InitGameR} id="recommencer" class="button">Recommencer l'histoire</a>
+
+    <form id="invisibleForm" method=post action=@{GameR}>
+        <input type=text name=characterLife>
+        <input type=text name=characterSkill>
+        <input type=text name=characterGold>
+        <input type=text name=characterDisciplines>
+        <input type=text name=characterItems>
+        <input type=text name=currentPage>
+        <input type=submit>
